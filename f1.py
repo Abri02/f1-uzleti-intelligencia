@@ -37,7 +37,6 @@ def load_session_with_retry(session, retries=3):
             time.sleep(5)
     return False
 
-# 2. FŐ ETL FÜGGVÉNY
 def job_extract_f1_data(years):
     engine = get_db_engine()
     existing_races = get_existing_races(engine)
